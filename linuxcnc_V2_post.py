@@ -466,7 +466,7 @@ def parse(pathobj):
             
             # VH Add dwell after M3
             if OUTPUT_DWELL is True:
-                out += linenumber() + "G4 " + DWELLTIME + " \n"
+                out += linenumber() + "G4 P" + DWELLTIME + " \n"
                 OUTPUT_DWELL = False
 
         return out
